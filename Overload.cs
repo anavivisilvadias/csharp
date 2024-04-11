@@ -64,27 +64,20 @@ public class Mago : Personagem {
     }
 }    
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Instanciando um Guerreiro e um Mago
-        Guerreiro guerreiro = new Guerreiro("Conan", 10, 100, 30, 20);
-        Mago mago = new Mago("Gandalf", 10, 80, 25, 15);
 
-        public class Program {
 
-            public static void Main(string[] args) {
-                Personagem guerreiro = new Guerreiro();
-                Personagem mago = new Mago();
-                Personagem arqueiro = new Arqueiro();
-                //Sobrecarga
-                guerreiro.Atacar();//Chama o método Atacar() da classe derivada
-                guerreiro.Atacar("Investida!");//Chama o método Atacar(string) da classe base
-                //Sobrecarga
-                mago.Atacar();
-                mago.Atacar("Bola de Fogo!");
-            }
-        }
+public class Program {
+
+    public static void Main(string[] args) {
+        Personagem guerreiro = new Guerreiro();
+        Personagem mago = new Mago();
+        Personagem arqueiro = new Arqueiro();
+        //Sobrecarga
+        guerreiro.Atacar();//Chama o método Atacar() da classe derivada
+        guerreiro.Atacar("Investida!");//Chama o método Atacar(string) da classe base
+        //Sobrecarga
+        mago.Atacar();
+        mago.Atacar("Bola de Fogo!");
     }
 }
+    
